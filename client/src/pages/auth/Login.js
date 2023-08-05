@@ -5,7 +5,6 @@ import axios from "axios";
 import { useLocation, useNavigate } from "react-router-dom";
 import "../../styles/AuthStyles.css";
 import { useAuth } from "../../context/auth";
-import { Location } from "react-router-dom";
 
 const Login = () => {
   const [email, setEmail] = useState("");
@@ -68,6 +67,18 @@ const Login = () => {
               required
             />
           </div>
+
+          <button
+            type="button"
+            className="btn btn-primary"
+            onClick={() => {
+              navigate("/forget-password");
+            }}
+          >
+            Forget password
+          </button>
+
+          <div className="mb-3"></div>
 
           <button type="submit" className="btn btn-primary">
             Log In
