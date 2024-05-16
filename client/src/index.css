@@ -83,3 +83,12 @@ font-family: 'Poppins', sans-serif; */
   background-color: black;
   color: white;
 }
+<<<<<<< HEAD
+=======
+
+/* ================== */
+.product-link {
+  text-decoration: none !important;
+  color: white !important;
+}
+>>>>>>> main
